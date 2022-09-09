@@ -1,22 +1,19 @@
 import './App.css';
+import Cart from './components/cart';
+import Navbar from './components/navbar';
+import Products from './components/products';
 
 function App() {
   return (
-    <header className="fondo">
-      <div>
-        <div className="titulo">
-          <h1>MANN.CO</h1>
-          <div>
-            <div className="secciones">
-              <a href="...">Seccion 1</a>
-              <a href="...">Seccion 2</a>
-              <a href="...">Seccion 3</a>
-              <a href="...">Seccion 4</a>
-            </div>
-          </div>
-        </div>
+    <>
+      <div className="fondo">
+        <h1>MANN.CO</h1>
+        <Navbar />
+        <Cart />
       </div>
-    </header>
+      <Products name="llave" type="utilidad" prize="100" description="Abre cajas" />
+      <Products name="caja" type="utilidad" prize="30" description="caja" />
+    </>
   );
 }
 
