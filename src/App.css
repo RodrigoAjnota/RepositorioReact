@@ -41,5 +41,28 @@ ul, li{
 a{
   font-size: larger;
   color: #DDE5B6;
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.card{
+  display: flex;
+}
+
+.cardTitle{
+  margin: 20px 0;
+  font-size: x-large;
+}
+
+.cardText{
+  margin: 10px 0;
+  font-size: larger;
+}
+
+.botones{
+  display: flex;
+  gap: 15px;
+}
+
+.boton{
+  padding: 3px 30px;
 }

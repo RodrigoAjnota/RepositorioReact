@@ -1,7 +1,7 @@
 import './App.css';
-import Cart from './components/cart';
-import Navbar from './components/navbar';
-import Products from './components/products';
+import Cart from './components/Cart';
+import Navbar from './components/Navbar';
+import Products from './containers/Products';
 
 function App() {
   return (
@@ -11,10 +11,9 @@ function App() {
         <Navbar />
         <Cart />
       </div>
-      <Products name="llave" type="utilidad" prize="100" description="Abre cajas" />
-      <Products name="caja" type="utilidad" prize="30" description="caja" />
+      <Products />
     </>
-  );
+  )
 }
 
 export default App;
