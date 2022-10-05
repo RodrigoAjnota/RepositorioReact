@@ -3,66 +3,131 @@
   margin: 0;
 }
 
-.menu{
-  margin-top: 10px;
-  margin-right: 20px;
-  font-size: larger;
-}
-
-.menuCart{
-  display: flex;
-}
-
-.imgCart{
-  padding-top: 11px;
+.ImgCart{
+  padding-top: 5px;
   width: 40px;
   height: 27px;
 }
 
-.fondo{
+.Logo{
+  font-size: xx-large;
+  text-decoration: none;
+  color: #F0EAD2;
+}
+
+a{
+  text-decoration: none;
+  color: #F0EAD2;
+}
+
+.NavCentro, .NavDerecho{
+  display: flex;
+  align-items: center;
+}
+
+.MenuCart{
+  font-size: large;
+  color: #F0EAD2;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+h2{
+  font-size: large;
+  color: #F0EAD2;
+  text-decoration: none;
+  padding-right: 30px;
+}
+
+.Fondo{
   display: flex;
   justify-content: space-between;
-  padding: 5px 50px;
-  color: #F0EAD2;
+  padding: 0px 60px;
   background-color: #A98467;
   height: 50px;
 }
 
-.navbar-nav{
-  display: inline-flex;
+img{
+  width: 100%;
+  background-color: #DDE5B6;
 }
 
-ul, li{
-  padding-top: 5px;
-  padding-right: 40px;
-  display: inline-block;
-}
-
-a{
-  font-size: larger;
-  color: #DDE5B6;
-  text-decoration: none;
-}
-
-.card{
+.FlexItems{
   display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
 }
 
-.cardTitle{
-  margin: 20px 0;
-  font-size: x-large;
+.FondoItem{
+  border: 1px solid black;
+  margin: 0 50px;
+  margin-bottom: 30px;
+  width: 500px;
+  background-color: #A98467;
 }
 
-.cardText{
-  margin: 10px 0;
+.TituloItem{
   font-size: larger;
+  text-align: center;
+  color: #ADC178;
+}
+
+.FlexProduct{
+  margin-top: 10px;
+}
+
+.itemDescrip{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.imgUtily{
+  width: 20px;
+  height: 17px;
+}
+
+p{
+  font-size: large;
+  color: #F0EAD2;
 }
 
 .botones{
   display: flex;
-  gap: 15px;
+  justify-content: center;
+  padding: 5px 10px;
 }
 
 .boton{
-  padding: 3px 30px;
+  height: 30px;
+  width: 80px;
+  margin: 0 15px;
+  border-radius: 5px;
+  border: #DDE5B6;
+}
+
+.itemDetailBg{
+  margin: 20px 130px;
+}
+
+.itemDetailImg{
+  width: 500px;
+  margin-right: 50px;
+}
+
+.itemDetailFlex{
+  display: flex;
+  background-color: #A98467;
+}
+
+.itemDetailFont{
+  font-size: x-large;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  color: #ADC178;
+}
+
+.itemDetailButon{
+  display: flex;
+  align-items: flex-end;
 }
