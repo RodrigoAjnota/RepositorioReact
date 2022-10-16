@@ -9,16 +9,14 @@ const ItemListContainer = () => {
     const { id } = useParams()
 
     useEffect(() => {
-        if (id) {
-            customFetch(2000, dataProducts.filter(item => item.categoryId === parseInt(id)))
+        customFetch(1000, dataProducts.filter(item => {
+            if (id === undefined) return item
+            return item.categoryId === parseInt(id)
+        }))
             .then(result => setData(result))
             .catch(err => console.log(err))
-        } else {
-            customFetch(2000, dataProducts)
-            .then(result => setData(result))
-            .catch(err => console.log(err))
-        }
     }, [id]);
+    
     return(
         <>
         {

@@ -16,7 +16,7 @@ const Navbar = () => {
             <div className="NavDerecho">
                 <a href="..." className="MenuCart">Registrarse</a>
                 <a href="..." className="MenuCart">Iniciar Sesion</a>
-                <a href="..."><MdOutlineShoppingCart className="ImgCart" /></a>
+                <Link to='/cart'><MdOutlineShoppingCart className="ImgCart" /></Link>
             </div>
         </div>
         </>

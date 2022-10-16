@@ -1,9 +1,11 @@
 import Item from "./Item";
 
-const ItemList = ( { items } ) => {
+const ItemList = ({ items }) => {
     const onAdd = (cantidad) => {
         alert(`Compraste ${cantidad} productos`)
     }
+
+    if (items.length === 0) return <p>Cargando....</p>
 
     return(
         <div className="FlexItems">

@@ -1,9 +1,17 @@
 import ItemCount from "./ItemCount";
+import { useState, useContext } from "react";
 import { ImPriceTag, ImWrench, ImSpinner11 } from "react-icons/im";
+import { Link } from "react-router-dom";
+import { CartContext } from "./CartContext";
 
 const ItemDetail = ({item, initial}) => {
+    const [ itemCount, setitemCount ] = useState(0);
+    const { addItem } = useContext(CartContext);
+
     const onAdd = (cantidad) => {
-        alert(`Compraste ${cantidad} productos`)
+        alert(`Compraste ${item.name}, ${cantidad} productos.`)
+        setitemCount(cantidad)
+        addItem(item, cantidad)
     }
 
     return(
@@ -22,7 +30,11 @@ const ItemDetail = ({item, initial}) => {
                     </div>
                 </div>
                 <div className="itemDetailButon">
-                    <ItemCount initial={initial} stock={item.stock} onAdd={onAdd} />
+                    {
+                        itemCount === 0
+                        ? <ItemCount initial={initial} stock={item.stock} onAdd={onAdd} />
+                        : <Link to='/cart'><button>Ir carrito</button></Link>
+                    }
                 </div>
             </div>     
         </div> 
